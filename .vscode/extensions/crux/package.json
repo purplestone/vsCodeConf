@@ -1,0 +1,19 @@
+{
+    "name": "crux",
+    "displayName": "crux",
+    "description": "",
+    "categories": ["Themes"],
+    "version": "0.0.1",
+    "publisher": "purplestone",
+    "engines": {"vscode": "^1.14.0"},
+    "contributes": {
+        "themes": [
+            {
+				"id": "crux",
+                "label": "crux",
+                "uiTheme": "vs-dark",
+                "path": "./themes/crux-color-theme.json"
+            }
+        ]
+    }
+}

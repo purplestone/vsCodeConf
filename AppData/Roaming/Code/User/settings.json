@@ -1,0 +1,17 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "editor.minimap.enabled": 0,
+    "workbench.colorTheme": "crux",
+    "typescript.check.tscVersion": false,
+    "saveBackup.conf.backupDir": "D:/saveBackup",
+    "files.eol": "\n",
+    "editor.insertSpaces": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "window.zoomLevel": 0
+}

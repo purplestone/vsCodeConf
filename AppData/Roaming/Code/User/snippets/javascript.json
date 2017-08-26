@@ -1,0 +1,118 @@
+{
+    "Arrows function": {
+        "prefix": "af",
+        "body": [
+            "(${1})=>{",
+            "\t${2}",
+            "}"
+        ],
+        "description": "Arrows function"
+    }
+    ,"console.log();" : {
+        "prefix": "log",
+        "body": [
+            "console.log(${1});"
+        ],
+        "description": "console.log();"
+    }
+    ,"Node Md Test" : {
+        "prefix": "nodetest",
+        "body": [
+            "",
+            "///////////////////////////////////////////////////////////////////",
+            "",
+            "if(!module.parent) {(function () {",
+            "   var assert = require('assert');",
+            "   var oArgs = {",
+            "       ",
+            "   };",
+            "",
+            "   var oC = module.exports.call('test', oArgs);",
+            "   oC._init();",
+            "   console.log(oC);",
+            "",
+            "})();}"
+        ],
+        "description": "!module.parent test"
+    }
+    ,"else" : {
+        "prefix": "else",
+        "body": [
+            "else{",
+            "    ${1}",
+            "}"
+        ],
+        "description": "else"
+    }
+    ,"_fun" : {
+        "prefix": "_fun",
+        "body": [
+            "(function () {",
+            "   var _fun = function () {",
+            "       ",
+            "   };",
+            "",
+            "   ",
+            "",
+            "   return _fun;",
+            "}());"
+        ],
+        "description": "_fun"
+    }
+    ,"Anonymous function exec" : {
+        "prefix": "ae",
+        "body": [
+            "(function () {",
+            "   ${1}",
+            "})();"
+        ],
+        "description": "Anonymous function exec"
+    }
+    ,"for object" : {
+        "prefix": "forof",
+        "body": [
+            "Object.keys(${1:obj}).forEach(function (k) {var v = ${1}[k];",
+            "\t${2}",
+            "})"
+        ],
+        "description": "Anonymous function exec"
+    }
+    ,"setState" : {
+        "prefix": "ss",
+        "body": [
+			"setState({",
+			"\t${1}",
+			"});",
+        ],
+        "description": "setState"
+    }
+	,"For-Filter Loop": {
+		"prefix": "filter",
+		"body": [
+			"{filter(function(${2:o}) {",
+			"\t$0",
+			"});"
+		],
+		"description": "For-Filter Loop"
+	}
+	,"For-Map Loop": {
+		"prefix": "map",
+		"body": [
+			"map(function(${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "For-Map Loop"
+	}
+	,"For-Some Loop": {
+		"prefix": "some",
+		"body": [
+			"some(function(${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "For-Some Loop"
+	}
+
+}
+

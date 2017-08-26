@@ -1,0 +1,40 @@
+{
+    "name": "endestr",
+    "displayName": "endeStr",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "purplestone",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+		"onCommand:extension.endeStr"
+    ],
+	"main": "./out/extension",
+    "contributes": {
+        "commands": [
+			{
+				"command": "extension.endeStr",
+				"title": "endeStr Convert Selection"
+			}
+        ],
+		"keybindings": [
+			{
+				"command": "extension.endeStr",
+				"key": "ctrl+alt-e",
+				"when": "editorTextFocus"
+			}
+		]
+    },
+    "scripts": {},
+	"dependencies": {
+		"encode32": "^1.1.0",
+		"ent": "^2.2.0"
+	},
+    "devDependencies": {
+        "vscode": "^1.0.0"
+    }
+}

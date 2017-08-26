@@ -1,0 +1,1 @@
+contributes.languages[1].extensions.push('.njs');

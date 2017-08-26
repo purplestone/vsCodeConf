@@ -1,0 +1,67 @@
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "showOutput": "silent",
+    "args": [
+        "/c"
+    ],
+	"igone" : [
+        {
+            "taskName": "restore example 1",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args" : ["restore"],
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "restore example 2",
+            "suppressTaskName": true,
+            "args" : ["dotnet", "restore"],
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "DO NOT show this task in the Status Bar!",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args" : ["publish", "--configuration", "Release", "--runtime", "win10-x64"],
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile",
+            "showInStatusBar": false
+        },
+        {
+            "taskName": "processcss",
+            "suppressTaskName": true,
+            "command": "gulp",
+            "args" : ["processCSS"]
+        },
+        {
+            "taskName": "unittest",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args" : ["test"],
+            "isTestCommand": true,
+            "showOutput": "always"
+        },
+        {
+            "taskName": "dotnet info",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args" : ["--info"],
+            "showOutput": "always"
+        }
+
+	
+	],
+    "tasks": [
+        {
+            "taskName": "node",
+            "command": "node",
+            "args" : ["${file}"],
+            "showOutput": "always"
+        }
+	]
+}
