@@ -89,7 +89,7 @@
 	,"For-Filter Loop": {
 		"prefix": "filter",
 		"body": [
-			"{filter(function(${2:o}) {",
+			"filter(function(${2:o}) {",
 			"\t$0",
 			"});"
 		],

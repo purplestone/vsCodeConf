@@ -55,9 +55,9 @@
 	"Function Statement": {
 		"prefix": "function",
 		"body": [
-			"function ${1:name}(${2:params}) {",
+			"function ${1}(${2}) {",
 			"\t$0",
-			"}"
+			"}${1}"
 		],
 		"description": "Function Statement"
 	},
@@ -125,7 +125,7 @@
 		"body": [
 			"try {",
 			"\t$0",
-			"} catch (${1:err}) {",
+			"} catch (${1:error}) {",
 			"\t",
 			"}"
 		],
