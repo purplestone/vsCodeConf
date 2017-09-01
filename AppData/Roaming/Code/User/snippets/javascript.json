@@ -35,6 +35,40 @@
         ],
         "description": "!module.parent test"
     }
+    ,"_class" : {
+        "prefix": "_class",
+        "body": [
+            "var Class = (function () {",
+            "\tvar _pub_static = function () {var _pub = {}, _pri = {}, _pro = {};",
+            "\t\tvar _init = function () {",
+            "\t\t\t",
+            "\t\t\t",
+            "\t\t};",
+            "",
+            "\t\t",
+            "",
+            "\t\tswitch(this+'') {",
+            "\t\t\tcase 'test':",
+            "\t\t\t\t_pub._pri = _pri;",
+            "\t\t\tcase 'extend':",
+            "\t\t\t\t_pub._pro = _pro;",
+            "\t\t\t\t_pub._init = _init;",
+            "\t\t\t\tbreak;",
+            "\t\t\tdefault:",
+            "\t\t\t\tdelete _pub._init;",
+            "\t\t\t\tdelete _pub._pro;",
+            "\t\t\t\t_init.apply(_pub, arguments);",
+            "\t\t}",
+            "\t\treturn _pub;",
+            "\t};",
+            "",
+            "\t",
+            "",
+            "\treturn _pub_static;",
+            "}());"
+        ],
+        "description": "_class"
+    }
     ,"else" : {
         "prefix": "else",
         "body": [
