@@ -787,5 +787,39 @@
 				"foreground": "#b267e6"
 			}
 		}
+
+
+
+		
+		,{
+			"scope": "storage.type.templatetag",
+			"settings": {
+				"foreground": "#f5f5a6"
+			}
+		}
+		,{
+			"scope": "storage.type.variable",
+			"settings": {
+				"foreground": "#9be2ad"
+			}
+		}
+		,{
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#98eef3"
+			}
+		}
+		,{
+			"scope": "storage.type.attr",
+			"settings": {
+				"foreground": "#c16496"
+			}
+		}
+		,{
+			"scope": "string.unquoted.tag-string",
+			"settings": {
+				"foreground": "#fbb66d"
+			}
+		}
 	]
 }

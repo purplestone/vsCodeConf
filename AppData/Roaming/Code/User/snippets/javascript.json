@@ -105,9 +105,8 @@
     ,"for object" : {
         "prefix": "forof",
         "body": [
-            "Object.keys(${2:obj}).forEach(function (k) {var v = ${2}[k];",
+            "Object.keys(${1:obj}).forEach(function (k, i, v) {v = ${1}[k];",
             "\t$0",
-            "})${1}"
         ],
         "description": "for object"
     }
@@ -178,6 +177,14 @@
 			"Object.assign($0)"
 		],
 		"description": "Object.assign"
+	,"Cace Item": {
+		"prefix": "case",
+		"body": [
+			"case $1:",
+			"\t$0",
+			"\tbreak;"
+		],
+		"description": "Cace Item"
 	}
 
 }
