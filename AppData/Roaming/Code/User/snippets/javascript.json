@@ -71,9 +71,9 @@
     ,"for object" : {
         "prefix": "forof",
         "body": [
-            "Object.keys(${1:obj}).forEach(function (k) {var v = ${1}[k];",
-            "\t${2}",
-            "})"
+            "Object.keys(${1:obj}).forEach(function (k, i, v) {v = ${1}[k];",
+            "\t$0",
+            "})${2}"
         ],
         "description": "Anonymous function exec"
     }
@@ -112,6 +112,15 @@
 			"})${1}"
 		],
 		"description": "For-Some Loop"
+	}
+	,"Cace Item": {
+		"prefix": "case",
+		"body": [
+			"case $1:",
+			"\t$0",
+			"\tbreak;"
+		],
+		"description": "Cace Item"
 	}
 
 }
