@@ -107,6 +107,7 @@
         "body": [
             "Object.keys(${1:obj}).forEach(function (k, i, v) {v = ${1}[k];",
             "\t$0",
+            "})${2}"
         ],
         "description": "for object"
     }
