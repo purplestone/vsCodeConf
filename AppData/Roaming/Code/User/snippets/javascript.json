@@ -105,11 +105,11 @@
     ,"for object" : {
         "prefix": "forof",
         "body": [
-            "Object.keys(${1:obj}).forEach(function (k) {var v = ${1}[k];",
-            "\t${2}",
-            "})"
+            "Object.keys(${2:obj}).forEach(function (k) {var v = ${2}[k];",
+            "\t$0",
+            "})${1}"
         ],
-        "description": "Anonymous function exec"
+        "description": "for object"
     }
     ,"setState" : {
         "prefix": "ss",
@@ -125,7 +125,7 @@
 		"body": [
 			"filter(function(${2:o}) {",
 			"\t$0",
-			"});"
+			"})${1}"
 		],
 		"description": "For-Filter Loop"
 	}
@@ -146,6 +146,38 @@
 			"})${1}"
 		],
 		"description": "For-Some Loop"
+	}
+	,"For-Every Loop": {
+		"prefix": "every",
+		"body": [
+			"every(function(${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "ForEvery Loop"
+	}
+	,"For-Reduce Loop": {
+		"prefix": "reduce",
+		"body": [
+			"reduce(function(p, ${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "ForReduce Loop"
+	}
+	,"Object.keys": {
+		"prefix": "keys",
+		"body": [
+			"Object.keys($0)"
+		],
+		"description": "Object.keys"
+	}
+	,"Object.assign": {
+		"prefix": "assign",
+		"body": [
+			"Object.assign($0)"
+		],
+		"description": "Object.assign"
 	}
 
 }
