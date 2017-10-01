@@ -792,31 +792,31 @@
 
 		
 		,{
-			"scope": "storage.type.templatetag",
+			"scope": "storage.type.templatetag.nunjucks",
 			"settings": {
 				"foreground": "#f5f5a6"
 			}
 		}
 		,{
-			"scope": "storage.type.variable",
+			"scope": "storage.type.variable.nunjucks",
 			"settings": {
 				"foreground": "#9be2ad"
 			}
 		}
 		,{
-			"scope": "keyword.control",
+			"scope": "keyword.control.nunjucks",
 			"settings": {
 				"foreground": "#98eef3"
 			}
 		}
 		,{
-			"scope": "storage.type.attr",
+			"scope": "storage.type.attr.nunjucks",
 			"settings": {
 				"foreground": "#c16496"
 			}
 		}
 		,{
-			"scope": "string.unquoted.tag-string",
+			"scope": "string.unquoted.tag-string.nunjucks",
 			"settings": {
 				"foreground": "#fbb66d"
 			}
