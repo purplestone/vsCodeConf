@@ -2,7 +2,7 @@
     "Arrows function": {
         "prefix": "af",
         "body": [
-            "(${1})=>{",
+            "(${1}) => {",
             "\t${2}",
             "}"
         ],
@@ -63,17 +63,26 @@
         "prefix": "ae",
         "body": [
             "(function () {",
-            "   ${1}",
-            "})();"
+            "\t$0",
+            "})()${1}"
+        ],
+        "description": "Anonymous function exec"
+    }
+    ,"Anonymous Arrows function exec" : {
+        "prefix": "aae",
+        "body": [
+            "(() => {",
+            "\t$0",
+            "})()${1}"
         ],
         "description": "Anonymous function exec"
     }
     ,"for object" : {
         "prefix": "forof",
         "body": [
-            "Object.keys(${1:obj}).forEach(function (k) {var v = ${1}[k];",
-            "\t${2}",
-            "})"
+            "Object.keys(${1:obj}).forEach(function (k, i, v) {v = ${1}[k];",
+            "\t$0",
+            "})${2}"
         ],
         "description": "Anonymous function exec"
     }
@@ -89,9 +98,9 @@
 	,"For-Filter Loop": {
 		"prefix": "filter",
 		"body": [
-			"{filter(function(${2:o}) {",
+			"filter(function(${2:o}) {",
 			"\t$0",
-			"});"
+			"})${1}"
 		],
 		"description": "For-Filter Loop"
 	}
@@ -113,6 +122,37 @@
 		],
 		"description": "For-Some Loop"
 	}
+	,"For-Every Loop": {
+		"prefix": "every",
+		"body": [
+			"every(function(${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "For-Every Loop"
+	}
+	,"Cace Item": {
+		"prefix": "case",
+		"body": [
+			"case $1:",
+			"\t$0",
+			"\tbreak;"
+		],
+		"description": "Cace Item"
+	}
+	,"Object.defineProperty": {
+		"prefix": "defineProperty",
+		"body": [
+			"Object.defineProperty($0, '${1:key}', {",
+			"\tenumerable: false,",
+			"\tconfigurable: false,",
+			"\twritable: false,",
+			"\tvalue : ${2}",
+			"});"
+		],
+		"description": "Object.defineProperty"
+	}
 
 }
+
 
