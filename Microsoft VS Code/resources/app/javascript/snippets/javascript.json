@@ -31,6 +31,15 @@
 		],
 		"description": "For-Each Loop"
 	},
+	"For-Map Loop": {
+		"prefix": "map",
+		"body": [
+			"map(function(${2:o}) {",
+			"\t$0",
+			"})${1}"
+		],
+		"description": "For-Map Loop"
+	},
 	"For-In Loop": {
 		"prefix": "forin",
 		"body": [

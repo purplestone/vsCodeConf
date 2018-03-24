@@ -806,7 +806,13 @@
 		,{
 			"scope": "keyword.control.nunjucks",
 			"settings": {
-				"foreground": "#98eef3"
+				"foreground": "#3b5577ff"
+			}
+		}
+		,{
+			"scope": "keyword.control.flow",
+			"settings": {
+				"foreground": "#4ea1bfff"
 			}
 		}
 		,{

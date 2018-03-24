@@ -97,8 +97,17 @@
         "prefix": "ae",
         "body": [
             "(function () {",
-            "   ${1}",
-            "})();"
+            "\t$0",
+            "})()${1}"
+        ],
+        "description": "Anonymous function exec"
+    }
+    ,"Anonymous Arrows function exec" : {
+        "prefix": "aae",
+        "body": [
+            "(() => {",
+            "\t$0",
+            "})()${1}"
         ],
         "description": "Anonymous function exec"
     }
@@ -109,7 +118,7 @@
             "\t$0",
             "})${2}"
         ],
-        "description": "for object"
+        "description": "Anonymous function exec"
     }
     ,"setState" : {
         "prefix": "ss",
@@ -202,6 +211,20 @@
 		],
 		"description": "_pri"
 	}
+	,"Object.defineProperty": {
+		"prefix": "defineProperty",
+		"body": [
+			"Object.defineProperty($0, '${1:key}', {",
+			"\tenumerable: false,",
+			"\tconfigurable: false,",
+			"\twritable: false,",
+			"\tvalue : ${2}",
+			"});"
+		],
+		"description": "Object.defineProperty"
+	}
+
+}
 
 }
 

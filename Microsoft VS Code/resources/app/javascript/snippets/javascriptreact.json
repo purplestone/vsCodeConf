@@ -55,9 +55,9 @@
 	"Function Statement": {
 		"prefix": "function",
 		"body": [
-			"function ${1:name}(${2:params}) {",
+			"function ${2}(${3}) {",
 			"\t$0",
-			"}"
+			"}${1}"
 		],
 		"description": "Function Statement"
 	},
