@@ -178,6 +178,7 @@
 			"Object.assign($0)"
 		],
 		"description": "Object.assign"
+	}
 	,"Cace Item": {
 		"prefix": "case",
 		"body": [
@@ -186,6 +187,20 @@
 			"\tbreak;"
 		],
 		"description": "Cace Item"
+	}
+	,"_pub": {
+		"prefix": "_pub",
+		"body": [
+			"_pub[\"$1\"] = $2"
+		],
+		"description": "_pub"
+	}
+	,"_pri": {
+		"prefix": "_pri",
+		"body": [
+			"_pri[\"$1\"] = $2"
+		],
+		"description": "_pri"
 	}
 
 }
